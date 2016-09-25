@@ -1,0 +1,10 @@
+
+cpi r0 05H ;
+goz zero ;
+cpi r1 04H ;
+fact: mul r0 r1 r0 ;
+      dcr r1 ;
+      gonz fact ;
+
+zero: cpi r0 01H ;
+stp ;

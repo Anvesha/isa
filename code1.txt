@@ -1,0 +1,20 @@
+
+cpi r1 0005H ;
+	
+lrpi r6r7 0001H ;
+	
+lrpi r4r5 0012H ;
+
+label:
+	cprp r0 r6r7 ;
+ 
+        strp r4r5 r0 ;   
+        inrp r6r7 ;
+	
+        dcrp r4r5 ;
+ 
+        dcr  r1 ;
+	
+        gonz label ;
+	
+        stp ;

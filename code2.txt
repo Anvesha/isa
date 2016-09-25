@@ -1,0 +1,10 @@
+
+cpi r6 09H ;
+lrpi r4r5 01H ;
+cpi r2 01H ;
+search: cprp r0 r4r5 ;
+        inrp r4r5 ;
+        inr r2 ;
+        ges r0 r6 r0 ;
+        gonz search ;
+stp ;

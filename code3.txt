@@ -1,0 +1,12 @@
+
+lrpi r6r7 3000H ;
+cprp r2 r6r7 ;
+cpi r0 00H ;
+add: inrp r6r7 ;
+     cprp r1 r6r7 ;
+     sum r0 r1 r0 ;
+     dcr r2 ;
+     gonz add ;
+     inrp r6r7 ;
+     cprp r6r7 r0 ;
+stp ;
